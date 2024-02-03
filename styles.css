@@ -13,6 +13,7 @@ body {
 
 a {
       color: rgb(103, 141, 88);
+      text-decoration: none;
 }
 
 a:visited, a:hover {
@@ -47,11 +48,17 @@ ul {
       margin: 0 25%;
 }
 
+ul a li:hover {
+      background-color:rgb(103, 141, 88);
+      color: #FFF;
+}
+
 li {
       padding: 1rem 0;
       margin: 1rem 0;
       border: solid 3px rgb(103, 141, 88);
       text-align: center;
+      border-radius: 10px;
 }
 
 i {
@@ -106,12 +113,36 @@ form {
       margin-left: 7.5%;
 }
 
-input {
+input, textarea {
       width: 100%;
+      border-color: rgb(103, 141, 88);
+      height: 1.5rem;
+      color: #000;
+      font-size: 16px;
+      font-family: 'Outfit', sans-serif;
+      border-radius: 5px;
 }
 
 textarea {
+      height: 10rem;
+}
+
+.submit {
       width: 100%;
+      background-color: white;
+      color: rgb(103, 141, 88);
+      padding: 1rem 0;
+      margin: 1rem 0;
+      font-size: 16px;
+      font-family: 'Outfit', sans-serif;
+      border-radius: 10px;
+      height: 4rem;
+      border-color: solid 3px rgb(103, 141, 88);
+}
+
+.submit:hover {
+      background-color: rgb(103, 141, 88);
+      color: #FFF;
 }
 
 .required {
